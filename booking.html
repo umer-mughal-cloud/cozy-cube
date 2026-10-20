@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a comfortable 12-hour private apartment stay with Cozy Cube in Bahria Town.">
+  <title>Request a Stay — Cozy Cube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#171916;--muted:#646961;--cream:#f5f4ef;--paper:#fffefa;--line:rgba(23,25,22,.12);--green:#314a3b;--green2:#24382c;--ease:cubic-bezier(.16,1,.3,1);--shell:1120px}
+    *,*::before,*:after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+    .shell{width:min(var(--shell),calc(100% - 40px));margin-inline:auto}
+    .topbar{border-bottom:1px solid var(--line);background:rgba(255,254,250,.94)}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.06em;font-size:25px}.brand span{color:var(--green)}
+    .navlink{font-size:14px;color:var(--muted)}
+    .hero{background:var(--cream);padding:58px 0 54px}
+    .eyebrow{font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--green);margin:0 0 16px}
+    h1,h2{font-family:Manrope,sans-serif;letter-spacing:-.055em;line-height:1.08;margin:0}
+    h1{font-size:clamp(38px,6vw,66px);max-width:760px}
+    .intro{max-width:640px;line-height:1.8;color:var(--muted);font-size:16px;margin:20px 0 0}
+    main{padding:46px 0 76px}
+    .layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:28px;align-items:start}
+    .panel{border:1px solid var(--line);border-radius:18px;background:#fff;padding:clamp(22px,4vw,38px);box-shadow:0 18px 50px rgba(23,25,22,.035)}
+    h2{font-size:27px;margin-bottom:9px}.sub{color:var(--muted);font-size:14px;line-height:1.65;margin:0 0 26px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}
+    label{font-size:13px;font-weight:700}
+    input,select,textarea{width:100%;border:1px solid #d9dcd5;border-radius:9px;padding:13px 14px;background:#fffefa;color:var(--ink);outline:none;transition:border-color .2s,box-shadow .2s}
+    input:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(49,74,59,.1)}
+    textarea{min-height:94px;resize:vertical}.hint{font-size:12px;color:var(--muted);line-height:1.5}
+    .check{display:flex;align-items:flex-start;gap:10px;font-size:12px;line-height:1.6;color:var(--muted);margin:20px 0}.check input{width:auto;margin-top:3px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:0;border-radius:9px;background:var(--green);color:white;padding:15px 20px;font-weight:700;cursor:pointer;transition:transform .2s,background .2s;width:100%}
+    .btn:hover{background:var(--green2);transform:translateY(-1px)}
+    .notice{display:none;padding:14px;border-radius:9px;background:#f5f4ef;color:var(--ink);font-size:13px;line-height:1.65;margin-top:16px}.notice.show{display:block}
+    .side{position:sticky;top:22px;background:var(--green);color:white;border-radius:18px;padding:28px}
+    .side .eyebrow{color:#cbd8cc}.side h2{font-size:25px}.side p,.side li{font-size:14px;line-height:1.75;color:rgba(255,255,255,.82)}
+    .side ul{padding-left:18px;margin:18px 0 0}.side .rule{height:1px;background:rgba(255,255,255,.18);margin:24px 0}
+    .contact{display:grid;gap:10px;margin-top:15px}.contact a{display:block;border:1px solid rgba(255,255,255,.3);padding:11px 12px;border-radius:8px;font-size:13px;font-weight:700;text-align:center}.contact a:hover{background:rgba(255,255,255,.1)}
+    .foot{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:12px}
+    @media(max-width:760px){.layout{grid-template-columns:1fr}.side{position:static}.hero{padding:42px 0}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.nav{min-height:68px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="shell nav">
+    <a class="brand" href="index.html" aria-label="Cozy Cube home">cozy<span>cube</span>.</a>
+    <a class="navlink" href="index.html">← Back to home</a>
+  </div></header>
+
+  <section class="hero"><div class="shell">
+    <p class="eyebrow">Your private stay in Bahria Town</p>
+    <h1>Request your 12-hour stay.</h1>
+    <p class="intro">Share your preferred apartment, date and details. Your request remains pending until the Cozy Cube team checks availability and confirms it with you.</p>
+  </div></section>
+
+  <main class="shell"><div class="layout">
+    <section class="panel" aria-labelledby="form-title">
+      <h2 id="form-title">Stay details</h2>
+      <p class="sub">This prototype prepares a request message. It does not yet save requests or confirm availability.</p>
+      <form id="booking-form">
+        <div class="grid">
+          <div class="field full">
+            <label for="apartment">Preferred apartment *</label>
+            <select id="apartment" name="apartment" required>
+              <option value="">Select an apartment</option>
+              <option value="Apartment 1 (name to be confirmed)">Apartment 1 — name to be confirmed</option>
+              <option value="Apartment 2 (name to be confirmed)">Apartment 2 — name to be confirmed</option>
+              <option value="Any available apartment">Any available apartment</option>
+            </select>
+            <span class="hint">Temporary labels — replace these with the actual apartment names before accepting requests.</span>
+          </div>
+          <div class="field"><label for="full-name">Full name *</label><input id="full-name" name="fullName" autocomplete="name" required maxlength="100" placeholder="Your name"></div>
+          <div class="field"><label for="phone">Phone / WhatsApp number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="+92 3XX XXXXXXX"></div>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" maxlength="150" placeholder="you@example.com"></div>
+          <div class="field"><label for="guests">Number of guests *</label><select id="guests" name="guests" required><option value="">Select guests</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option></select></div>
+          <div class="field"><label for="date">Preferred date *</label><input id="date" name="date" type="date" required></div>
+          <div class="field"><label for="time">Preferred check-in time *</label><select id="time" name="time" required>
+            <option value="">Select a time</option><option>6:00 AM</option><option>7:00 AM</option><option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option>
+          </select></div>
+          <div class="field full"><label for="notes">Additional details (optional)</label><textarea id="notes" name="notes" maxlength="800" placeholder="Any requests or questions for our team?"></textarea><span class="hint">Please do not include passwords, payment card details, or other sensitive information.</span></div>
+        </div>
+        <label class="check"><input id="acknowledge" type="checkbox" required><span>I understand this is only a booking request. My stay is not confirmed until Cozy Cube contacts me and approves it.</span></label>
+        <button class="btn" type="submit">Prepare booking request <span aria-hidden="true">↗</span></button>
+        <div class="notice" id="notice" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <aside class="side">
+      <p class="eyebrow">How it works</p><h2>A simple, personal booking process.</h2>
+      <ul><li>Choose your preferred apartment and time.</li><li>The Cozy Cube team checks availability.</li><li>Our team approves or rejects the request.</li><li>Your stay is confirmed only after explicit approval.</li></ul>
+      <div class="rule"></div>
+      <p><strong>12-hour stay · Up to 4 guests</strong><br>Availability and check-in are subject to confirmation.</p>
+      <div class="contact">
+        <a href="https://wa.me/923200432875" target="_blank" rel="noopener noreferrer">Chat with us on WhatsApp</a>
+        <a href="mailto:cozycubee@gmail.com">Email Cozy Cube</a>
+      </div>
+      <p class="hint" style="color:#cbd8cc;margin-top:16px">These contact links are live links, but the request form is still a prototype and does not create a stored booking.</p>
+    </aside>
+  </div></main>
+
+  <footer class="foot"><div class="shell">© <span id="year"></span> Cozy Cube · Bahria Town</div></footer>
+
+  <script>
+    const CONTACT = { whatsappNumber: "923200432875", bookingEmail: "cozycubee@gmail.com" };
+    const form = document.getElementById("booking-form");
+    const dateInput = document.getElementById("date");
+    const notice = document.getElementById("notice");
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const now = new Date();
+    dateInput.min = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0,10);
+
+    function showNotice(message) { notice.textContent = message; notice.classList.add("show"); }
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const data = new FormData(form);
+      const details = [
+        "COZY CUBE — BOOKING REQUEST",
+        "Status: Pending review — NOT CONFIRMED",
+        "Preferred apartment: " + data.get("apartment"),
+        "Name: " + data.get("fullName"),
+        "Phone / WhatsApp: " + data.get("phone"),
+        "Email: " + (data.get("email") || "Not provided"),
+        "Guests: " + data.get("guests"),
+        "Preferred date: " + data.get("date"),
+        "Preferred check-in: " + data.get("time"),
+        "Stay duration: 12 hours",
+        "Additional details: " + (data.get("notes") || "None")
+      ].join("\n");
+      const encoded = encodeURIComponent(details);
+      const whatsappUrl = "https://wa.me/" + CONTACT.whatsappNumber + "?text=" + encoded;
+      const emailUrl = "mailto:" + CONTACT.bookingEmail + "?subject=" + encodeURIComponent("Cozy Cube booking request — " + data.get("date")) + "&body=" + encoded;
+      const opened = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      window.location.href = emailUrl;
+      showNotice("A WhatsApp message and email draft are being opened. Send one of the drafts to contact Cozy Cube. This request is not saved in a database and is not a confirmed booking.");
+    });
+  </script>
+</body>
+</html>
